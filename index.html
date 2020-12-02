@@ -228,7 +228,7 @@
 
 
 
-    <div id="myButton">
+    <div id="myDIV" style="display:none">
         <table style="width: 70%; margin-right: calc(20%); margin-left: calc(8%); margin-top: -10px;">
         <tbody>
         <p style="text-align: center;"><span style="font-weight: 400;">&nbsp;</span></p>
@@ -324,24 +324,6 @@
             x.style.display = "none";
           }
         }
-        var $button = $('#myButton'),
-  $text   = $('#myText'),
-  visible = true;
-
-$button.click(function(){
-if ( visible ) {
-  $text.slideUp('fast',function(){
-    $text.addClass('hide')
-         .slideDown(0);
-  });
-} else {
-  $text.slideUp(0,function(){
-    $text.removeClass('hide')
-         .slideDown('fast');
-  });
-}
-visible = ! visible;
-});
     </script>
 
         <HR WIDTH="100%" COLOR="#FFAD18" SIZE="3">
