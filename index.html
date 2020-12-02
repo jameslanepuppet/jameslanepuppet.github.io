@@ -222,7 +222,7 @@
 <table style="width: 70%; margin-right: calc(20%); margin-left: calc(8%); margin-top: -20px;">
     <tbody>
         <p style="text-align: center;"><span style="font-weight: 400;">&nbsp;</span></p>
-            <td style="width: 50%; border-color: white; text-align: center;"><button class="button button1 button3" onclick="businessobj();smoothscroll(document.getElementById('second'));"><img src = "" width="100" height="100"/><br><div class="usecase"> <span><h2 style="font-weight: 100; color:rgb(63, 63, 63)"></h2></span> </div> </button> </td>
+            <td style="width: 50%; border-color: white; text-align: center;"><button class="button button1 button3" onclick="businessobj()"><img src = "" width="100" height="100"/><br><div class="usecase"> <span><h2 style="font-weight: 100; color:rgb(63, 63, 63)"></h2></span> </div> </button> </td>
             <td style="width: 50%; border-color: white; text-align: center;"><button class="button button2 button4" onclick="usecases()"><img src = "" width="100" height="100"/><br><div class="usecase"> <span><h2 style="font-weight: 100; color:rgb(63, 63, 63)"></h2></span> </div> </button> </td>
    </tbody>
    </table>
@@ -265,7 +265,6 @@
     </tbody>
     </table>
     </div>
-    <div class="second" id="second"></div>
     <br>
     <br>
 
@@ -320,32 +319,6 @@
             }
           }
         </script>    
-        <script> 
-          window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
-
-    </script>   
-
     <script>
         function myFunction() {
           var x = document.getElementById("myDIV");
