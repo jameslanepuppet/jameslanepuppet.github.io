@@ -6,14 +6,3 @@ img {
   height: auto;
 }
 
-.btn {
-
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #e7a730;
-  color: white;
-  opacity: 1;
-}
